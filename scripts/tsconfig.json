@@ -3,8 +3,9 @@
     "noEmit": true,
     "allowJs": true,
     "esModuleInterop": true,
-    "target": "esnext",
-    "module": "esnext",
+    "strict": true,
+    "target": "es2017",
+    "module": "es2022",
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
@@ -35,8 +36,9 @@
   },
   "include": [
     ".",
+    "**/*.ts",
     "../.redwood/types/includes/all-*",
     "../.redwood/types/includes/web-*",
-    "../types"
+    "../types",
   ]
 }

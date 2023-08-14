@@ -7,7 +7,11 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "5.4.3"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@faker-js/faker": "^8.0.2",
+    "@redwoodjs/core": "5.4.3",
+    "@types/bcrypt": "^5.0.0",
+    "bcrypt": "^5.1.0"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
@@ -18,7 +22,11 @@
     "yarn": ">=1.15"
   },
   "prisma": {
+    "schema": "api/db/schema.prisma",
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.6.0"
+  "packageManager": "yarn@3.6.0",
+  "dependencies": {
+    "ts-node": "latest"
+  }
 }
